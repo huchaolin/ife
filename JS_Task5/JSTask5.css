@@ -1,0 +1,13 @@
+.que{
+    display:inline-block;
+    background-color:red;
+    line-height:32px;
+    color:white;
+    padding: 0 8px;
+    margin-top:5px;
+    margin-right: 5px;
+    vertical-align:bottom;
+  }
+  .outBtn{
+    display:inline-block;
+  }

@@ -1,0 +1,132 @@
+.outer{
+    width:100%;
+    text-align: center;
+}
+.bg{
+    width: 1152px;
+    height: 721px;
+    position: relative;  
+    display: inline-block; 
+    background: url(timg.jpg);
+    background-repeat: no-repeat;
+}
+/* 用伪元素解决遮盖层的问题很方便 */
+.bg::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+    background: url(timg.jpg);
+    background-repeat: no-repeat;
+    transition: filter 0.4s;  
+}  
+.bg:hover::before{
+    filter: blur(4px);
+}
+
+
+
+.text{
+    position: relative;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 1s ,margin 0.5s;
+     /* 渐变色背景 */
+   background-image: -webkit-linear-gradient(left, rgb(64, 64, 250),
+    rgb(43, 250, 170) 25%, rgb(64,64,250) 50%, rgb(43,250,170) 75%, rgb(64,64,250) 100%);
+   /* 使背景裁剪为字体大小*/
+   -webkit-background-clip:text;
+   color: transparent;
+   /* -webkit-text-fill-color: transparent; */
+   background-size: 200% 100%;
+   animation: flow 3s infinite linear;
+}
+.bg:hover .text{
+    opacity: 1;
+}
+@keyframes flow{
+   from {
+        background-position: 0 0;
+    }
+  
+    to {
+        background-position: -100% 0;
+    }
+}
+
+
+.btn{
+    margin-top: 30px;
+    font-size: 30px;
+    background-image: -webkit-linear-gradient(left, rgb(64, 64, 250),
+    rgb(43, 250, 170) 25%, rgb(64,64,250) 50%, rgb(43,250,170) 75%, rgb(64,64,250) 100%);
+   /* 使背景裁剪为字体大小*/
+   -webkit-background-clip:text;
+   color: transparent;
+   /* -webkit-text-fill-color: transparent; */
+   background-size: 200% 100%;
+   animation: flow 3s infinite linear;
+
+}
+.bg:hover .textBorder{
+    opacity: 1;
+    margin-top: 210px;
+}
+.textBorder{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 500px;    
+    width:800px;
+    height: 250px;
+    opacity: 0;
+    transition: opacity 1s, margin 1s;
+}
+
+/* 渐变的左右两边框 */
+.bg:hover .textBorder::before{
+    height: 100%;
+    top: 0;
+}
+/* 渐变的左右两边框 */
+.textBorder::before{
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    border-left: 7px solid rgba(180, 199, 255,0.8);
+    border-right: 7px solid rgba(180, 199, 255,0.8);
+    border-radius: 5px;
+    left: 0;
+    top: 50%;
+    -webkit-transition:  top 1s  ease-in, height 1s ease-in;
+    -moz-transition:  top 1s ease-in, height 1s ease-in;
+    transition:  top 1s ease-in, height 1s ease-in;
+}
+
+/* 渐变的上下两边框 */
+.bg:hover .textBorder::after{
+    width: 100%;
+    left: 0;
+}
+/* 渐变的上下两边框 */
+.textBorder::after{
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    border-top: 7px solid rgba(180, 199, 255,0.8);
+    border-bottom: 7px solid rgba(180, 199, 255,0.8);
+    border-radius: 5px;
+    left: 50%;
+    top: 0;
+    -webkit-transition:  left 1s  ease-in, width 1s ease-in-out;
+    -moz-transition:  left 1s ease-in, width 1s ease-in-out;
+    transition:  left 1s ease-in, width 1s ease-in-out;
+}

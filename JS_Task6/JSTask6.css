@@ -1,0 +1,24 @@
+.que{
+    display:inline-block;
+    background-color:red;
+    height:32px;
+    line-height:32px;
+    color:white;
+    padding: 0 8px;
+    margin-top:5px;
+    margin-right: 5px;
+    vertical-align:top;
+  }
+  .inputId{
+    margin: 16px;
+    width: 200px;
+    height: 100px;
+    display: block;
+  }
+  .outBtn{
+    display:inline-block;
+  }
+  #queBox span {
+    display:inline-block;
+    color: royalblue;
+  }

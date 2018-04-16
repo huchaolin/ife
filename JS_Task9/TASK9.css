@@ -1,0 +1,838 @@
+/* 顶栏导航 */
+.top_nav{
+    width:100%;
+    height: 60px;
+    line-height: 57px; 
+    background-color: #2289bf;
+    position: relative;
+}
+.top_nav>div{
+    display: inline-block;
+}
+.top_logo{
+    width:38px;
+    height: 38px;
+    background-image: url(https://buptbighammer.github.io/IFEpreview/2017/xiaowei/task9/images/logo.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50px;
+    top:11px;
+}
+.top_search{
+   border: none;
+    width:315px;
+    height:30px;
+    border-radius:15px;
+    background:white url(https://buptbighammer.github.io/IFEpreview/2017/xiaowei/task9/images/zoom.png) no-repeat 15px 6px;
+    position: absolute;
+    top: 14px;
+    right:156px;
+    padding: 3px 40px;
+    box-sizing: border-box;
+}
+.top_login {
+    text-decoration: none;
+    display: inline-block;
+    width:60px;
+    height:30px;
+    background: url(https://buptbighammer.github.io/IFEpreview/2017/xiaowei/task9/images/login.png) no-repeat 4px 8px;
+    position: absolute;
+    top: 14px;
+    right:87px;
+    padding-left:25px;
+    box-sizing: border-box;
+    color: white;
+    font-family: "SimHei";
+    font-size: 12px;
+    line-height: 35px;
+    letter-spacing: 2px;
+}
+/* 主体 */
+
+.main{width: 1280px;height: 1210px;}
+.main>div{
+    display: inline-block;
+}
+/* 左栏 */
+.leftbar{
+    width:250px;
+    height:1210px;
+    background-color: #2a2e3d;
+    float: left;
+}
+.leftbar_top{
+    width:250px;
+    height:150px;
+    overflow: hidden;
+}
+.leftbar_top1{
+    margin-left:48px;
+    margin-top:19px; 
+}
+.leftbar_top1 span{
+    display: inline-block;
+    font-family:"SimHei";
+    font-size: 16px;
+    color: white;
+    line-height: 62px;
+    vertical-align: bottom;
+    margin-left: 10px;
+   
+}
+.head_outer{
+    display: inline-block;
+    width:58px;
+    height:58px;
+    border: 2px solid #bababe;
+    border-radius:50%; 
+    position: relative;
+}
+.head_inner{
+    display: inline-block;
+    width:48px;
+    height:48px;
+    background-color: #bababe;
+    border-radius:50%; 
+    position: absolute;
+    top:5px;
+    left:5px;
+}
+
+.leftbar_top2{
+    color: #6e8095;
+    font-family: "SimSun";
+    font-size: 12px;
+    text-align: center;
+}
+.leftbar_top2>div{
+    display: inline-block;
+    margin:22px 32px;
+    vertical-align: top;
+}
+.leftbar_top2_rightborder{
+    border-right: 1px  solid #6e8095;
+    height: 30px;
+    margin:22px 0!important;
+}
+.leftbar_top2 span{
+    font-family: "SimHei";
+    font-size: 16px;
+}
+/* 左侧列表 */
+
+.leftbar_list ul li{
+    list-style-type: none;
+}
+li.self_list{
+    list-style-image: url(https://dtcz.github.io/ifetask/stage01/task09/dist/img/report-icon.png);
+}
+li.doc1,li.doc3 {
+    list-style-image: url(https://dtcz.github.io/ifetask/stage01/task09/dist/img/fold-icon.png);
+}
+li.doc2{
+    list-style-image: url(https://dtcz.github.io/ifetask/stage01/task09/dist/img/unfold-icon.png);
+}
+li.file1{
+    list-style-image: url(https://dtcz.github.io/ifetask/stage01/task09/dist/img/file-active-icon.png);
+}
+li.file2{
+    list-style-image: url(https://dtcz.github.io/ifetask/stage01/task09/dist/img/file-icon.png);
+}
+.doc1 a{
+    background: url(https://dtcz.github.io/ifetask/stage01/task09/dist/img/folder-icon.png) 0px 0px no-repeat;
+    padding-left: 1.2em;
+    display: block;
+}
+.doc2>a{
+    background: url(https://dtcz.github.io/ifetask/stage01/task09/dist/img/folder-active-icon.png) 0px 0px no-repeat;
+    padding-left: 1.2em;
+    display: block;
+}
+.doc3 a{
+    background: url(https://dtcz.github.io/ifetask/stage01/task09/dist/img/folder-icon.png) 0px 0px no-repeat;
+    padding-left: 1.2em;
+    display: block;
+}
+li.self_collection,li.gallery,li.growth_record{
+    list-style-image: url(https://dtcz.github.io/ifetask/stage01/task09/dist/img/star-icon.png);
+}
+
+li.self_share{
+    list-style-image: url(https://dtcz.github.io/ifetask/stage01/task09/dist/img/share-icon.png);
+}
+
+li.account_info{
+    list-style-image: url(https://dtcz.github.io/ifetask/stage01/task09/dist/img/info-icon.png);
+}
+ul.list_margin{
+    padding-left: 15px;
+}
+/* hover */
+ 
+
+
+li.self_collection,li.gallery,li.growth_record,li.self_share,li.account_info{
+    width: 250px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+li.left_main_list1,li.self_collection,li.gallery,li.growth_record,li.self_share,li.account_info {
+    width: 250px;
+    height:40px;
+}
+
+
+.li_a2{
+    text-decoration: none;
+    display: block;
+    width: 250px;
+    height:40px;
+    color: #6e8095;
+    font-family: "SimHei";
+    font-size: 12px;
+    -webkit-transition: all 0.5s ease-in-out ;
+    -moz-transition: all 0.5s ease-in-out ;
+    transition: all 0.9s ease-in-out ;
+}
+a.li_a2:hover{
+    color: white;
+}
+ul.left_main_list1{
+    padding:0;
+    margin-left: 49px;
+    margin-top: 0;
+    padding-top: 14px;
+    margin-bottom:0;
+}
+ul.left_main_list1 a{    text-decoration: none;
+    display: block;
+    width: 250px;
+    height:28px;
+    color: #6e8095;
+    font-family: "SimHei";
+    font-size: 12px;
+  }
+
+ul.left_main_list2{
+    padding:0;
+    margin-left: 49px;
+}
+.self_box{
+  
+    background-color:#383d4e
+}
+.self_list_color1
+{
+    color: white !important;
+}
+/* 右侧 */
+.right_main_box{
+   vertical-align: top;
+   background-color: #eeeeed;
+    width: 1030px;
+    height:1210px ;
+}
+.right_top{
+    display: inline-block;
+    width: 1020px;
+    height: 30px;
+    background-color: white;
+    padding-left:30px; 
+}
+.right_top a{
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    text-decoration:none;
+    color:#aaaaaa;
+    font-size: 12px;
+    font-family: "simhei";
+}
+.right_top a:hover{
+    color:#6898c2;
+}
+.right_body{
+    margin:0 60px;
+    overflow: hidden;
+}
+.part1{
+    width: 100%;
+    height: 90px;
+    padding:15px 0;
+    background-color: white;
+    margin-top:20px;
+    border: 1px solid #dddee0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.part1>div{
+    display: inline-block;
+    margin-left: 30px;
+}
+.part1 {
+    font-family: "simhei";
+    font-size: 12px;
+    color: #aaa;
+}
+.part1 select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: white url(https://psilocine.github.io/learngit/ife/xiaowei/task09/css/img/black-arrow.gif) 95% 5px no-repeat;
+    width:120px;
+    height: 25px;
+    border: 1px solid rgb(202, 202, 202);
+    padding-left:10px;
+    line-height: 25px; 
+}
+.part1 select:hover{
+    
+    background: url(https://psilocine.github.io/learngit/ife/xiaowei/task09/css/img/blue-arrow.gif) 95% 5px no-repeat;
+}
+.part1_short_select{
+    width:70px!important;
+}
+
+
+.part1_2>div{display: inline-block;}
+.part1_2 a{
+    text-decoration: none;
+    display: inline-block; 
+    width: 29px;
+    height: 58px;
+    background: url(https://psilocine.github.io/learngit/ife/xiaowei/task09/css/img/change.gif) 50% 50% no-repeat;
+   vertical-align:top;
+           }
+.buyer,.date,.total_time{ margin-bottom: 8px;}
+.pat1_3>div{display: block;}
+.part1_3_1>div{display: inline-block;}
+.part1_3_2>div{display: inline-block;}
+
+.part1_1_query{vertical-align: top;}
+.part1_2{vertical-align: top;}
+.part1_4_search input[type='submit']{
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    color: white;
+    background-color: #388ac1;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+}
+.part1_4_search {
+    height: 58px;
+    vertical-align: middle;
+}
+.part2{
+    background-color: #eeedec;
+    margin-top: 10px;
+    font-size: 0;
+}
+.part2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.part2 div{
+    display: inline-block;
+    width:110px;
+    height: 60px;
+    border-left: 1px solid #cacdd1;
+    border-top: 1px solid #cacdd1;
+    background-color: white;
+    font-family: "Microsoft YaHei";
+    color: black;
+    text-align: center;
+    margin-left: 6px;
+    font-size: 12px;
+}
+.part2_it{
+    margin-left:0!important;
+}
+.part2_price{
+    vertical-align: top;
+   box-sizing:border-box;
+    padding-top:12px;
+ 
+}
+
+div.part2_price:hover{
+ border-top: 5px solid #4388c9;
+}
+    
+.part2_price p{color: #adadad;margin: 0;padding: 0;font-size: 16px;}
+.part2_price span{
+    color:#ec6500;
+    font-size:21px;
+}
+.part2_it,.part2_gt{
+    width: 30px!important;
+    vertical-align: top;
+}
+a{text-decoration: none;}
+.part2_gt a{
+        color:#adadad;
+        line-height: 60px;
+        font-size: 25px!important;
+        font-family: "simhei"!important;
+        display: block;
+}
+.part2_it a{
+    color:#adadad;
+    line-height: 60px;
+    font-size: 25px!important;
+    font-family: "simhei"!important;
+    display: block;
+}
+.part_history_query{
+    width: 130px!important;
+    color: #535353;
+    background: url(https://psilocine.github.io/learngit/ife/xiaowei/task09/css/img/history.gif) 20px 50% no-repeat;
+    vertical-align: top;
+}
+.part_history_query a{
+    display: block;
+    padding-left: 58px;
+    line-height: 60px;
+    color: #535353;
+}
+
+.part3{margin:20px 0;}
+.part3 h1{
+      font-weight: normal;
+      font-family: "Microsoft YaHei";
+      font-size: 12px;
+      color: black;
+  }
+.part3 p{
+    font-size: 10px!important;
+    color: #aaa!important;
+  }
+
+.part3_green>div{display: inline-block;}
+.part3_green{
+ border-left: 4px solid #43b29e!important;
+ box-sizing: border-box;
+ padding:12px 15px 12px 9px;
+ border-radius: 3px;
+}
+.part3_green_box{
+    height: 45px;
+    width: 60px;
+    background-color: #43b29e;
+    float: right;
+}
+
+.part3_blue>div{display: inline-block;}
+.part3_blue{
+ border-left: 4px solid #388ac1!important;
+ box-sizing: border-box;
+ padding:12px 15px 12px 9px;
+ border-radius: 3px;
+}
+.part3_blue_box{
+    height: 45px;
+    width: 60px;
+    background-color: #388ac1;
+    float: right;
+}
+
+.part3_red>div{display: inline-block;}
+.part3_red{
+ border-left: 4px solid #cf4a36!important;
+ box-sizing: border-box;
+ padding:12px 15px 12px 9px;
+ border-radius: 3px;
+}
+.part3_red_box{
+    height: 45px;
+    width: 60px;
+    background-color: #cf4a36;
+    float: right;
+}
+
+.part3_yellow>div{display: inline-block;}
+.part3_yellow{
+ border-left: 4px solid #e2cd46!important;
+ box-sizing: border-box;
+ padding:12px 15px 12px 9px;
+ border-radius: 3px;
+}
+.part3_yellow_box{
+    height: 45px;
+    width: 60px;
+    background-color: #e2cd46;
+    float: right;
+}
+
+
+.part3_flex{
+    display:flex;
+    justify-content:space-between; 
+}
+.part3_flex>div{
+    width:200px;
+    height:70px;
+    box-sizing:border-box;
+    display: inline-block;
+    font-family: "simhei";
+    font-size: 12px;
+    color: black;
+    border: 1px solid #aaa;
+  }
+.part4_part5>div{display: inline-block;}
+.part4_part5{
+    display: flex;
+    justify-content: space-between;
+}
+.part4_left_ul{
+    display: block;
+    width: 490px;
+    height:280px;
+    position: relative;
+    margin:0;
+    padding:0;
+}
+.part4_left_ul li{
+display: inline-block;
+position: relative;
+z-index:1;
+}
+.part4_left_ul span{
+background-color:#ededf0;
+border-top-left-radius:5px;
+border-top-right-radius:5px;
+color: #535353;
+display: inline-block;
+width: 84px;
+height: 28px;
+font-family: "Microsoft YaHei";
+font-size: 12px;
+text-align: center;
+line-height: 29px;
+position: relative;
+}
+
+.part4_part5_1{ 
+    width: 530px;
+    border-radius: 10px;
+    box-shadow:  0px 0px 5px #ababab;
+    height: 350px;
+    background-color: white;
+    margin-bottom:10px;
+    box-sizing: border-box;
+}
+.header{
+    background-color:#f4f6f7;
+    color:#aaa;
+    font-family:"SimHei";
+    font-size: 12px;
+    height: 30px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #e7e8eb;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.part4_left_item2{
+    width:530px;
+    height:317px;
+    box-sizing: border-box;
+    background-color: white;
+    padding:13px 20px 25px 20px; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* 用input的checked属性与兄弟选择器 加绝对定位可以实现纯html+css的切换效果 */
+.part4_table1,.part4_table2,.part4_table3,.part4_table4,.part4_table5{ 
+    display: none;
+    padding:20px 40px;
+    width: 490px;
+    height: 250px;
+    border:1px solid #cbcbcc;
+    border-radius: 0 5px 5px  5px ;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.part4_left_ul table{  
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+.part4_table1{left:0;top:29px;}
+.part4_table2 {left:-90px;top:29px;}
+.part4_table3 {left:-178px;top:29px;}
+.part4_table4 {left:-267px;top:29px;}
+.part4_table5 {left:-356px;top:29px;}
+.part4_left_ul td{
+    width:100px;
+    height:30px;
+  border:1px solid #cbcbcc;
+  color:#535353!important;
+  font-size: 12px!important;
+  font-family: "simsun";
+  text-align: center;
+ }
+
+ .part4_left_ul input[type='radio']{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     z-index: 100;
+     cursor: pointer;
+     opacity: 0;
+ }
+ .part4_left_ul input[type='radio']:checked+span{
+    border:1px solid  #cbcbcc;
+    background-color:white;
+    border-bottom:1px solid white;
+    z-index: 50;
+ }
+ .part4_left_ul input[type='radio']:checked+span+div{
+     display: block;
+ }
+
+.part4_part5_2{
+    height: 350px;
+    width:350px;
+    border-radius: 10px;
+    box-shadow:  0px 0px 5px #ababab;
+    box-sizing: border-box;
+    background-color: white;
+    margin-bottom:10px;
+}
+
+.part4_right_item2{
+    padding-left: 38px;
+    padding-top: 16px;
+    background-color: white;
+}
+.search{
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    color: white;
+    background-color: #388ac1;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    position: absolute;
+    right: 0;
+}
+ 
+.part4_right_table {
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    border-collapse: collapse;
+}
+.part4_right_table td{
+    line-height: 10px;
+    padding-left: 10px;
+    padding-top:5px;
+    box-sizing: border-box;
+}
+.part4_right_table h1{
+    color:#c3c2c2;
+    margin: 0;
+    padding: 0;
+    font-weight: normal ;
+    font-size: 12px;
+}
+.part4_right_table p{color: black;}
+.part4_right_tdr2c1{
+    width:100px;
+    height: 50px;
+    border-top: 1px solid #c3c2c2;
+    border-right:  1px solid #c3c2c2;
+}
+.part4_right_tdr2c2{
+    width:180px;
+    height: 50px;
+    border-top: 1px solid #c3c2c2;
+}
+.part4_right_tdr3{ 
+    height: 150px;
+    border-top: 1px solid #c3c2c2;
+    border-bottom: 1px solid #c3c2c2;
+    vertical-align: top;
+}
+.part4_right_tdr4{
+    position: relative;
+}
+.part4_right_tdr4 h1{
+    position: absolute;
+    left: 22px;
+    top: 9px;
+}
+.part4_right_tdr4 input[type='checkbox']{
+    position: absolute;
+    left:0 ;
+}
+.part4_right_tdr4 h1{display: inline-block!important;}
+/* part5 */
+.calendar,.whatday,.whatdate{
+    font-family: "simhei";
+    font-size: 12px;
+    color: #535353;
+}
+.calendar{
+    width: 312px;
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.whatdate span{color: #c9161d;}
+.calendar_year,.calendar_month,.calendar_date,.calendar_return{
+    border: 1px solid #aaa;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: "simhei";
+    font-size: 12px;
+    color: #535353;  
+    padding-left: 5px;
+    cursor: pointer;
+}
+.calendar_year{
+    height: 23px; 
+    width: 65px;
+    background:white url(https://psilocine.github.io/learngit/ife/xiaowei/task09/css/img/arrow-down.png) 95% 50% no-repeat;
+}
+.calendar_month{
+   padding-left: 25px;
+    height: 23px; 
+    width: 85px;
+    background: white url(https://psilocine.github.io/learngit/ife/xiaowei/task09/css/img/arrow-down.png) 75% 50% no-repeat;
+}
+.calendar_date{
+    height: 23px; 
+    width: 72px;
+    background: white url(https://psilocine.github.io/learngit/ife/xiaowei/task09/css/img/arrow-down.png) 95% 50% no-repeat;
+}
+.calendar_return{
+    height: 23px; 
+    width: 65px;
+    background-color: white;
+    cursor: pointer;
+}
+.whatday{
+    margin:0 auto;
+    border-collapse: collapse;
+    border-top:2px solid #a9cfec;
+    border-bottom: 2px solid #e1e1e2;
+}
+.whatday td{
+width: 45px;
+height: 30px;
+text-align: center;
+line-height: 30px;
+}
+.whatdate{ 
+    margin:0 auto;
+    border-collapse:separate;
+    border-spacing:3px;
+    box-sizing: border-box;
+}
+.whatdate td{
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    cursor: pointer;
+}
+.whatdate td:hover{border: 1px solid #f7d156;}
+.calendar_day9,.calendar_day12,.calendar_day19{border: 1px solid #f7d156;}
+/* part6 */
+.ranking table{
+    margin:17px auto;
+    font-family: "simhei";
+    font-size: 12px;
+    color: #000;
+    border-collapse: collapse;
+    border: 1px solid #aaa;
+}
+.ranking_table_r1c1,.ranking_table_r1c2,.ranking_table_r1c3{
+    font-size: 13px;
+}
+.ranking_table_r1c3{padding-left:30px;box-sizing: border-box;text-align:left!important;}
+
+.ranking_table_r1c1{
+    width: 68px;
+}
+.ranking_table_r1c2{
+    width:92px;
+}
+.ranking_table_r1c3{
+    width: 291px;
+}
+.ranking td{
+    border: 1px solid #aaa;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+}
+.rankingbar_outer{
+    display: inline-block;
+    width:168px;
+    height:4px;
+    background-color: #dddddd;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+.rankingbar_r2c3{
+    width:80%;
+    height:100%;
+    background-color: #ec6d51;
+}
+.rankingbar_r3c3{
+    width:75%;
+    height:100%;
+    background-color: #ef804f;
+}
+.rankingbar_r4c3{
+    width:65%;
+    height:100%;
+    background-color: #f19e4f;
+}
+.rankingbar_r5c3{
+    width:60%;
+    height:100%;
+    background-color: #7fcbf0;
+}
+.rankingbar_r6c3{
+    width:55%;
+    height:100%;
+    background-color: #7fcbf0;
+}
+.rankingbar_r7c3{
+    width:50%;
+    height:100%;
+    background-color: #7fcbf0;
+}
+.rankingbar_r8c3{
+    width:45%;
+    height:100%;
+    background-color: #7fcbf0;
+}
+.rankingbar_r9c3{
+    width:40%;
+    height:100%;
+    background-color: #7fcbf0;
+}
+.rankingbar_r10c3{
+    width:35%;
+    height:100%;
+    background-color: #7fcbf0;
+}
+.rankingbar_r11c3{
+    width:30%;
+    height:100%;
+    background-color: #7fcbf0;
+}
+.ranking tr:hover{background: #f3f5f6;cursor: pointer;}
+.ranking tr:first-child:hover{background: white;cursor: default!important;}

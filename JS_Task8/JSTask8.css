@@ -1,0 +1,31 @@
+#rootNode{
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 2px black;
+    margin: 5px;
+    flex-flow: 1;   
+    background-color: white;
+    color: black;
+}
+#rootNode div{
+    height: 70%;
+    padding: 10px;
+    border: solid 2px black;
+    display:inline-flex;
+    justify-content: space-around;
+    margin: 1px;
+    background-color: white;
+    color: black;
+}
+#rootNode span{
+    height: 20px;
+}
+.bgColor{
+    background-color: royalblue!important;
+}
+.match{
+    color:white!important;
+    background-color: royalblue!important;
+}
